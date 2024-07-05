@@ -106,12 +106,6 @@ async function renderReviews() {
             prevButton.focus();
           }
         }
-        });
-
-    } else {
-      iziToast.info({
-        position: 'topRight',
-        message: 'No reviews found',
       });
     }
   } catch (err) {

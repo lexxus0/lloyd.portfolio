@@ -19,7 +19,7 @@
 
 .swiper .reviews-card {
   display: flex;
-  height: 302px;
+  height: auto;
   flex-direction: column;
   padding: 32px 24px;
   border: 1px solid #fafafa33;

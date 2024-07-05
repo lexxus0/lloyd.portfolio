@@ -71,6 +71,7 @@ async function renderReviews() {
 
           1440: {
             slidesPerView: 4,
+            spaceBetween: 16,
             loop: false,
           },
         },

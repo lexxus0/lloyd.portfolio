@@ -76,7 +76,8 @@
             <path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa);" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M24 8l-16 16"></path>
             <path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa);" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091" d="M8 8l16 16"></path>
         </symbol>
-        
+        <symbol id="arrow-down" viewBox="0 0 24 24">
+     <path d="M7.406 8.578 12 13.172l4.594-4.594L18 9.984l-6 6-6-6z" />
 
     </defs>
 </svg>

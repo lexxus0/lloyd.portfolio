@@ -1,334 +1,333 @@
 .visually-hidden {
-   position: absolute;
-   white-space: nowrap;
-   width: 1px;
-   height: 1px;
-   overflow: hidden;
-   border: 0;
-   padding: 0;
-   clip: rect(0 0 0 0);
-   clip-path: inset(50%);
-   margin: -1px;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
 }
 
 .about-wrap-descr {
-   display: flex;
-   flex-direction: column;
-   gap: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .about-card-title {
-   padding: 32px 32px 0;
-   max-width: 100%;
-   min-height: 500px;
-   border-radius: 24px;
-   transition: box-shadow .5s ease;
-   background-color: var(--cards);
+  padding: 32px 32px 0;
+  max-width: 100%;
+  min-height: 500px;
+  border-radius: 24px;
+  transition: box-shadow 0.5s ease;
+  background-color: var(--cards);
 }
 
 .about-card-title:hover,
 .about-card-title:focus {
-   box-shadow: 0 0 8px #ed3b44;
+  box-shadow: 0 0 8px #ed3b44;
 }
 
 .about__title {
-   font-weight: 500;
-   font-size: 24px;
-   line-height: 1.16667;
-   letter-spacing: -0.03em;
-   text-transform: uppercase;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.16667;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
 }
 
 .about-accent-red {
-   color: #ed3b44;
+  color: #ed3b44;
 }
 
 .about-accent-gray {
-   color: rgba(250, 250, 250, 0.4);
+  color: rgba(250, 250, 250, 0.4);
 }
 
 .about-card-image {
-   max-width: 100%;
-   min-height: 500px;
-   border-radius: 24px;
-   transition: box-shadow .5s ease;
-   object-fit: contain;
-   background-size: cover;
-   background-image: url('../img/about-me/aboutme_mob@1x.png');
+  max-width: 100%;
+  min-height: 500px;
+  border-radius: 24px;
+  transition: box-shadow 0.5s ease;
+  object-fit: contain;
+  background-size: cover;
+  background-image: url('../img/about-me/aboutme_mob@1x.png');
 }
 
 @media (min-resolution: 192dpi) {
-   .aboutus-photo-box {
-      background-image: url('../img/about-me/aboutme_mob@2x.png');
-   }
+  .aboutus-photo-box {
+    background-image: url('../img/about-me/aboutme_mob@2x.png');
+  }
 }
 
 .about-card-image:hover,
 .about-card-image:focus {
-   box-shadow: 0 0 8px #fafafa;
+  box-shadow: 0 0 8px #fafafa;
 }
 
 /* ---------- Accordion ---------- */
 
 .about-accordion {
-   display: flex;
-   flex-direction: column;
-   margin: 32px 0;
+  display: flex;
+  flex-direction: column;
+  margin: 32px 0;
 }
 
 .about-accordion .about-accordion-item:nth-child(-n + 1) {
-   margin-top: 0;
+  margin-top: 0;
 }
 
 .about-accordion-item {
-   margin-top: 20px;
-   padding-bottom: 20px;
-   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
 
 .about-accordion-title {
-   display: flex;
-   justify-content: space-between;
-   margin-bottom: 12px;
-   font-size: 16px;
-   font-weight: 600;
-   letter-spacing: -0.02em;
-   text-transform: uppercase;
-   color: rgba(250, 250, 250, 0.4);
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
 }
 
 .about-accordion-title.hovered {
-   text-shadow: 0 0 5px #fafafa;
-   transition: text-shadow 0.5s ease;
+  text-shadow: 0 0 5px #fafafa;
+  transition: text-shadow 0.5s ease;
 }
 
 .btn-arrow {
-   display: flex;
-   flex-shrink: 0;
-   justify-content: center;
-   align-items: center;
-   padding: 9px;
-   transition: transform 0.5s ease;
-   border-radius: 50%;
-   border: 1px solid rgba(250, 250, 250, 0.2);
-   background-color: transparent;
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 9px;
+  transition: transform 0.5s ease;
+  border-radius: 50%;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  background-color: transparent;
 }
 
 .is-active .btn-arrow {
-   transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 
 .btn-arrow:hover {
-   border: 1px solid #fafafa;
+  border: 1px solid #fafafa;
 }
 
 .svg-arrow {
-   width: 18px;
-   height: 18px;
-   stroke: #fafafa;
-   fill: #fafafa;
+  width: 18px;
+  height: 18px;
+  stroke: #fafafa;
+  fill: #fafafa;
 }
 
 .ac .ac-panel {
-   overflow: hidden;
-   transition-property: height, visibility;
-   transition-timing-function: ease;
-   visibility: hidden;
+  overflow: hidden;
+  transition-property: height, visibility;
+  transition-timing-function: ease;
+  visibility: hidden;
 }
 
 .ac.is-active .ac-panel {
-   visibility: visible;
+  visibility: visible;
 }
 
 .about-accordion-dropdown {
-   display: flex;
-   flex-direction: column;
-   gap: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
 }
 
 .about-accordion-dscr {
-   font-weight: 500;
-   line-height: 1.5;
-   letter-spacing: -0.02em;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
 }
 
 .about-accordion-list {
-   display: flex;
-   flex-direction: column;
-   gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* ---------- Skills (swiper)  ---------- */
 
 .about-skills-container {
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
 }
 
 .about-skills-list {
-   display: flex;
+  display: flex;
 }
 
 .about-skills-list .about-skills-item {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100px;
-   font-weight: 500;
-   letter-spacing: -0.02em;
-   border-radius: 100%;
-   border: 1px solid rgba(250, 250, 250, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 130px;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  border-radius: 50%;
+  border: 1px solid rgba(250, 250, 250, 0.2);
 }
 
 .about-skills-btn {
-   margin-left: 55px;
-   display: flex;
-   padding: 0;
-   cursor: pointer;
-   border: none;
-   background-color: transparent;
+  margin-left: 55px;
+  display: flex;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
 }
 
 .about-arrow-right {
-   width: 28px;
-   height: 28px;
-   fill: #3b3b3b;
-   animation: wiggle-right 1s infinite;
+  width: 28px;
+  height: 28px;
+  fill: #3b3b3b;
+  animation: wiggle-right 1s infinite;
 }
 
 @keyframes wiggle-right {
-   0% {
-      transform: translateX(0);
-   }
+  0% {
+    transform: translateX(0);
+  }
 
-   25% {
-      transform: translateX(5px);
-   }
+  25% {
+    transform: translateX(5px);
+  }
 
-   50% {
-      transform: translateX(-10px);
-   }
+  50% {
+    transform: translateX(-10px);
+  }
 
-   75% {
-      transform: translateX(5px);
-   }
+  75% {
+    transform: translateX(5px);
+  }
 
-   100% {
-      transform: translateX(0);
-   }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 /* ---------- Tablet ---------- */
 
 @media screen and (min-width: 768px) {
-   .about-card-title {
-      padding: 64px 64px 0;
-      min-height: 700px;
-   }
+  .about-card-title {
+    padding: 64px 64px 0;
+    min-height: 700px;
+  }
 
-   .about__title {
-      font-size: 38px;
-      line-height: 1.05263;
-   }
+  .about__title {
+    font-size: 38px;
+    line-height: 1.05263;
+  }
 
-   .about-card-image {
-      min-height: 700px;
-      background-image: url('../img/about-me/aboutme_tablet@1x.png');
-   }
+  .about-card-image {
+    min-height: 700px;
+    background-image: url('../img/about-me/aboutme_tablet@1x.png');
+  }
 
-   @media (min-resolution: 192dpi) {
-      .aboutus-photo-box {
-         background-image: url('../img/about-me/aboutme_tablet@2x.png');
-      }
-   }
+  @media (min-resolution: 192dpi) {
+    .aboutus-photo-box {
+      background-image: url('../img/about-me/aboutme_tablet@2x.png');
+    }
+  }
 
-   /* ---------- Accordion ---------- */
+  /* ---------- Accordion ---------- */
 
-   .about-accordion-title {
-      margin-bottom: 8px;
-   }
+  .about-accordion-title {
+    margin-bottom: 8px;
+  }
 
-   .btn-arrow {
-      padding: 10px;
-   }
+  .btn-arrow {
+    padding: 10px;
+  }
 
-   .svg-arrow {
-      width: 20px;
-      height: 20px;
-   }
+  .svg-arrow {
+    width: 20px;
+    height: 20px;
+  }
 
-   .about-accordion-item {
-      margin-top: 32px;
-      padding-bottom: 24px;
-   }
+  .about-accordion-item {
+    margin-top: 32px;
+    padding-bottom: 24px;
+  }
 
-   .about-accordion-dropdown {
-      gap: 16px;
-   }
+  .about-accordion-dropdown {
+    gap: 16px;
+  }
 
-   /* ---------- Skills (swiper)  ---------- */
+  /* ---------- Skills (swiper)  ---------- */
 
-   .about-skills-container {
-      margin-top: 64px;
-   }
+  .about-skills-container {
+    margin-top: 64px;
+  }
 
-   .about-skills-list .about-skills-item {
-      height: 200px;
-      font-size: 20px;
-   }
+  .about-skills-list .about-skills-item {
+    height: 200px;
+    font-size: 20px;
+  }
 
-   .about-skills-btn {
-      margin-left: 64px;
-   }
+  .about-skills-btn {
+    margin-left: 64px;
+  }
 
-   .about-arrow-right {
-      width: 40px;
-      height: 40px;
-   }
+  .about-arrow-right {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 /* ---------- Desktop ---------- */
 
 @media screen and (min-width: 1440px) {
-   .about-wrap-descr {
-      flex-direction: row;
-      gap: 16px;
-   }
+  .about-wrap-descr {
+    flex-direction: row;
+    gap: 16px;
+  }
 
-   .about__title {
-      min-width: 50%;
-      line-height: 1.05263;
-   }
+  .about__title {
+    min-width: 50%;
+    line-height: 1.05263;
+  }
 
-   .about-card-image {
-      min-width: 50%;
-      background-image: url('../img/about-me/aboutme_desk@1x.png');
-   }
+  .about-card-image {
+    min-width: 50%;
+    background-image: url('../img/about-me/aboutme_desk@1x.png');
+  }
 
-   @media (min-resolution: 192dpi) {
-      .aboutus-photo-box {
-         background-image: url('../img/about-me/aboutme_desk@2x.png');
-      }
-   }
+  @media (min-resolution: 192dpi) {
+    .aboutus-photo-box {
+      background-image: url('../img/about-me/aboutme_desk@2x.png');
+    }
+  }
 
-   /* ---------- Accordion ---------- */
+  /* ---------- Accordion ---------- */
 
-   .about-accordion-dropdown {
-      gap: 32px;
-      margin-left: 50%;
-      padding-right: 68px;
-   }
+  .about-accordion-dropdown {
+    gap: 32px;
+    margin-left: 50%;
+    padding-right: 68px;
+  }
 
-   /* ---------- Skills (swiper)  ---------- */
+  /* ---------- Skills (swiper)  ---------- */
 
-   .about-skills-container {
-      margin: 96px 32px 0;
-   }
+  .about-skills-container {
+    margin: 96px 32px 0;
+  }
 
-   .about-skills-btn {
-      margin-left: 72px;
-   }
-
+  .about-skills-btn {
+    margin-left: 72px;
+  }
 }

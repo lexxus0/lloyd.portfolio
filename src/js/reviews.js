@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
+import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
 import iziToast from 'izitoast';
@@ -56,7 +56,8 @@ async function renderReviews() {
       list.insertAdjacentHTML("beforeend", markup);
 
       const swiper = new Swiper('.swiper', {
-        modules: [Navigation],
+        modules: [Navigation, Autoplay],
+
         breakpoints: {
           320: {
             slidesPerView: 1,
@@ -78,6 +79,8 @@ async function renderReviews() {
 
         autoplay: {
           delay: 3000,
+          disableOnInteraction: true,
+          pauseOnMouseEnter: true,
         },
 
         keyboard: {
@@ -108,6 +111,8 @@ async function renderReviews() {
           }
         }
       });
+    } else {
+      console.log('No reviews to display');
     }
   } catch (err) {
     console.log(err);

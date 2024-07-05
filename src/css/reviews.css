@@ -24,7 +24,12 @@
   padding: 32px 24px;
   border: 1px solid #fafafa33;
   border-radius: 20px;
-  overflow: hidden;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.swiper .reviews-card:hover {
+  background-color: var(--cards);
 }
 
 .reviews-card-img {
@@ -62,6 +67,7 @@
   align-items: center;
   justify-content: center;
   gap: 12px;
+  padding: 1px;
 }
 
 .reviews-btn-prev,
@@ -82,6 +88,12 @@
 .reviews-btn-prev:hover,
 .reviews-btn-next:hover {
   background-color: var(--cards);
+}
+
+.reviews-btn-prev:focus,
+.reviews-btn-next:focus {
+  background-color: var(--cards);
+  box-shadow: 0 0 0 1px var(--main-text);
 }
 
 .reviews-icon {

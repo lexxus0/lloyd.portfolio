@@ -6,6 +6,7 @@
   letter-spacing: -0.02em;
   opacity: 0.4;
   margin-bottom: 32px;
+  margin-top: 64px;
 }
 
 .swiper {
@@ -106,4 +107,15 @@
 .reviews-btn-prev:disabled,
 .reviews-btn-next:disabled {
   opacity: 0.3;
+}
+
+@media screen and (min-width: 768px) {
+  .reviews-title {
+    margin-top: 96px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .reviews-title {
+    margin-top: 164px;
+  }
 }

@@ -53,17 +53,17 @@ html {
 }
 
 section {
-  padding-bottom: 64px;
+  margin-bottom: 64px;
 }
 
 @media screen and (min-width: 768px) {
   section {
-    padding-bottom: 96px;
+    margin-bottom: 96px;
   }
 }
 @media screen and (min-width: 1440px) {
   section {
-    padding-bottom: 164px;
+    margin-bottom: 164px;
   }
 }
 

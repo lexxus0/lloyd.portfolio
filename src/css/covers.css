@@ -34,6 +34,9 @@
    justify-content: center;
    width: calc(100% / 8);
    white-space: nowrap;
+}
+
+.animation {
    animation-name: marqueeLine;
    animation-duration: 5s;
    animation-timing-function: ease-in-out;

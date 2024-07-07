@@ -54,12 +54,12 @@
   transition: box-shadow 0.5s ease;
   object-fit: contain;
   background-size: cover;
-  background-image: url('../img/about-me/aboutme_mob@1x.png');
+  background-image: url('../img/about-me/aboutme-mob@1x.webp');
 }
 
 @media (min-resolution: 192dpi) {
   .aboutus-photo-box {
-    background-image: url('../img/about-me/aboutme_mob@2x.png');
+    background-image: url('../img/about-me/aboutme-mob@2x.webp');
   }
 }
 
@@ -175,7 +175,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 130px;
+  height: 103px;
   font-weight: 500;
   letter-spacing: -0.02em;
   border-radius: 50%;
@@ -194,8 +194,13 @@
 .about-arrow-right {
   width: 28px;
   height: 28px;
-  fill: #3b3b3b;
+  stroke: #3b3b3b;
+  fill: none;
   animation: wiggle-right 1s infinite;
+}
+
+.about-arrow-right:hover{
+  stroke: #fafafa;
 }
 
 @keyframes wiggle-right {
@@ -235,12 +240,12 @@
 
   .about-card-image {
     min-height: 700px;
-    background-image: url('../img/about-me/aboutme_tablet@1x.png');
+    background-image: url('../img/about-me/aboutme-tablet@1x.webp');
   }
 
   @media (min-resolution: 192dpi) {
     .aboutus-photo-box {
-      background-image: url('../img/about-me/aboutme_tablet@2x.png');
+      background-image: url('../img/about-me/aboutme-tablet@2x.webp');
     }
   }
 
@@ -304,12 +309,12 @@
 
   .about-card-image {
     min-width: 50%;
-    background-image: url('../img/about-me/aboutme_desk@1x.png');
+    background-image: url('../img/about-me/aboutme-desk@1x.webp');
   }
 
   @media (min-resolution: 192dpi) {
     .aboutus-photo-box {
-      background-image: url('../img/about-me/aboutme_desk@2x.png');
+      background-image: url('../img/about-me/aboutme-desk@2x.webp');
     }
   }
 

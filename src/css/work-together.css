@@ -25,22 +25,30 @@
   align-items: center;
 }
 .footer-text-title {
-  margin: 0;
-  max-width: 267px;
   height: 40px;
   text-transform: uppercase;
   display: flex;
   align-items: center;
   transition: text-shadow 500ms ease;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
 }
+
 .footer-text-title:hover,
 .footer-bottom-title:hover {
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 .footer-bottom-title {
   height: 40px;
-  text-transform: uppercase;
   transition: text-shadow 500ms ease;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
 }
 .footer-image {
   float: left;
@@ -305,7 +313,11 @@
     font-size: 64px;
   }
   .footer-bottom-title {
+    font-weight: 500;
     font-size: 64px;
+    line-height: 100%;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
   }
   .footer-image {
     border-radius: 24px;

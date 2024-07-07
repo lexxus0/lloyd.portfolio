@@ -7,6 +7,16 @@ document.addEventListener('DOMContentLoaded', function () {
     btn.classList.add('header-order-project-btn');
     btn.textContent = 'Order the project';
 
+    const link = document.createElement('a');
+    link.setAttribute('href', '#work-together');
+    link.style.textDecoration = 'none';
+    link.style.color = 'inherit';
+
+    btn.addEventListener('click', () => {
+      window.location.href = link.getAttribute('href');
+    });
+
+    btn.prepend(link);
     placeForBtn.appendChild(btn);
   }
 });
@@ -20,12 +30,13 @@ document.addEventListener('DOMContentLoaded', () => {
     headerNavList.classList.add('header-nav-list');
 
     const items = ['About me', 'Benefits', 'Projects', 'FAQ'];
-    items.forEach(item => {
+    const links = ['about-me', 'benefits', 'projects', 'faq'];
+
+    items.forEach((item, index) => {
       const listItem = document.createElement('li');
       listItem.classList.add('header-nav-list-item');
-
       const link = document.createElement('a');
-      link.href = '#'; //fix after sect
+      link.href = `#${links[index]}`; //fix after sect
       link.textContent = item;
       link.classList.add('header-nav-list-item-link');
 

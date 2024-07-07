@@ -1,5 +1,5 @@
 .container-hero {
-  padding-top: 169px;
+  padding-top: 250px;
   padding-bottom: 32px;
   min-width: 375px;
   padding-left: 16px;
@@ -89,7 +89,6 @@ section {
     }
   }
   .container-hero {
-    /* padding-top: 188px; */
     min-width: 768px;
     /* padding-left: 16px;
         padding-right: 16px; */

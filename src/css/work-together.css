@@ -153,6 +153,7 @@
   margin-bottom: 8px;
   text-align: center;
   text-decoration: none;
+  margin: 8px;
   font-size: 14px;
   letter-spacing: -0.02em;
   transition: border 500ms ease, text-shadow 500ms ease, transform 500ms ease;
@@ -350,7 +351,6 @@
     padding: 18px 32px;
     font-size: 16px;
     gap: 8px;
-    margin: 0;
   }
   .modal {
     width: 492px;

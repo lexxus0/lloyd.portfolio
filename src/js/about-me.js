@@ -23,7 +23,6 @@ accordionsList.forEach(function (item) {
   });
 });
 
-
 document.addEventListener('DOMContentLoaded', function () {
   const slides = document.querySelectorAll('.about-skills-item');
   const swiperWrapper = document.querySelector('.swiper-wrapper');
@@ -70,5 +69,3 @@ document.addEventListener('DOMContentLoaded', function () {
     swiper.slideNext();
   });
 });
-
-

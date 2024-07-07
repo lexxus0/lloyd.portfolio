@@ -7,6 +7,10 @@
   z-index: 1;
 }
 
+.header-logo-link {
+  display: flex;
+}
+
 .header-container {
   margin: 0 auto;
   padding-left: 16px;
@@ -134,6 +138,12 @@
   letter-spacing: -0.02em;
   text-decoration-skip-ink: none;
   color: var(--main-text);
+}
+
+@media screen and (max-width: 767px) {
+  .header-nav-list-item {
+    text-decoration: underline;
+  }
 }
 
 .header-mobile-order-project-btn {

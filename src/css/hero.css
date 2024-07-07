@@ -1,13 +1,13 @@
 .container-hero {
-  padding-top: 169px;
+  padding-top: 250px;
   padding-bottom: 32px;
   min-width: 375px;
   padding-left: 16px;
   padding-right: 16px;
+  position: relative;
 }
 
-.hero,
-header {
+.hero {
   background-size: cover;
   background-image: url('../img/hero/mobile-hero.png');
   background-repeat: no-repeat;
@@ -20,8 +20,7 @@ section {
 }
 
 @media screen and (min-resolution: 192dpi) and (min-width: 375px) {
-  .hero,
-  header {
+  .hero {
     background-image: url('../img/hero/mobile-hero@2x.png');
   }
 }
@@ -80,19 +79,16 @@ section {
 }
 
 @media screen and (min-width: 768px) {
-  .hero,
-  header {
+  .hero {
     background-image: url('../img/hero/tablet-hero.png');
   }
 
   @media screen and (min-resolution: 192dpi) and (min-width: 768px) {
-    .hero,
-    header {
+    .hero {
       background-image: url('../img/hero/tablet-hero@2x.png');
     }
   }
   .container-hero {
-    /* padding-top: 188px; */
     min-width: 768px;
     /* padding-left: 16px;
         padding-right: 16px; */
@@ -131,14 +127,12 @@ section {
     margin-bottom: 96px;
   }
 
-  .hero,
-  header {
+  .hero {
     background-image: url('../img/hero/desktop-hero.png');
   }
 
   @media screen and (min-resolution: 192dpi) and (min-width: 1440px) {
-    .hero,
-    header {
+    .hero {
       background-image: url('../img/hero/desktop-hero@2x.png');
     }
   }

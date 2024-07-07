@@ -61,7 +61,7 @@ function openModal({ title, message }) {
   const markup = `<div class="backdrop is-open"><div class="modal is-visible"><button class="modal-close-btn" type="button"><svg
         class="modal-close-btn-icon"
         aria-label="close icon"
-        width="14" height="14"><use href="./img/icons.svg#icon-close-x"></use></svg></button>
+        width="14" height="14"><use href="../img/icons.svg#icon-close-x"></use></svg></button>
     <h2 class="modal-title">${title}</h2><p class="modal-description">${message}</p></div></div>`;
   refs.footerElem.insertAdjacentHTML('afterend', markup);
   document.body.classList.add('no-scroll');

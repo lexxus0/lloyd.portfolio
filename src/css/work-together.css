@@ -143,6 +143,7 @@
 .footer-contacts {
   display: flex;
   margin-top: 64px;
+  gap: 4px;
   list-style: none;
   font-style: normal;
 }
@@ -346,6 +347,7 @@
 
   .footer-contacts {
     margin-top: 18px;
+    gap: 8px;
   }
   .info-link {
     padding: 18px 32px;

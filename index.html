@@ -17,16 +17,54 @@
   <script type="module" crossorigin src="/js-project-group-11/commonHelpers.js"></script>
   <link rel="modulepreload" crossorigin href="/js-project-group-11/assets/vendor-8051fb90.js">
   <link rel="stylesheet" href="/js-project-group-11/assets/vendor-ed6a6904.css">
-  <link rel="stylesheet" href="/js-project-group-11/assets/index-22c8ff3b.css">
+  <link rel="stylesheet" href="/js-project-group-11/assets/index-d1d054b4.css">
 </head>
 
 <body>
-  <!-- <header>
-    <h1 class="container">test</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel magnam minima nisi veniam illo, dicta iure.
-        Laudantium perferendis laborum, placeat sequi ipsum ut similique veniam quam, praesentium est illum quasi.</p>
-    <button id="showToastBtn">Show Toast</button>
-</header> -->
+  <header class="header header-container">
+    <div class="header-logo-container">
+        <img class="header-logo-img" src="/js-project-group-11/assets/header-logo-230ae2b9.png" alt="Logo image" />
+        <span class="header-logo-span">jefferson*</span>
+        <button class="burger-menu-btn" aria-expanded="false" aria-controls="mobile-menu">
+            <svg class="header-burger-menu-icon" width="28" height="28">
+                <use href="/js-project-group-11/assets/icons-9a23d292.svg#icon-burger"></use>
+            </svg>
+        </button>
+        <span class="header-menu-text">Menu</span>
+        <div class="header-place-for-btn">
+
+        </div>
+    </div>
+
+    <div class="header-overlay">
+        <div class="header-overlay-modal">
+            <button class="header-mobile-menu-close-btn">
+                <svg class="header-close-icon-svg" width="28" height="28">
+                    <use href="/js-project-group-11/assets/icons-9a23d292.svg#icon-close-x"></use>
+                </svg>
+            </button>
+            <div class="header-nav-wrapper">
+                <ul class="header-nav-list-modal">
+                    <li class="header-nav-list-item">
+                        <a href="#about-me" class="header-nav-list-item-link">About me</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="#benefits" class="header-nav-list-item-link">Benefits</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="#projects" class="header-nav-list-item-link">Projects</a>
+                    </li>
+                    <li class="header-nav-list-item">
+                        <a href="#faq" class="header-nav-list-item-link">FAQ</a>
+                    </li>
+                </ul>
+                <button type="button" class="header-mobile-order-project-btn">
+                    <a href="#work-together">Order the project</a>
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
 
   <main>
     <section class="hero">
@@ -436,6 +474,8 @@
   <!-- <footer>
 
 </footer> -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/2.6.4/bodyScrollLock.min.js"></script>
   
 </body>
 

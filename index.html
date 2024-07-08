@@ -17,7 +17,7 @@
   <script type="module" crossorigin src="/js-project-group-11/commonHelpers.js"></script>
   <link rel="modulepreload" crossorigin href="/js-project-group-11/assets/vendor-2418e84e.js">
   <link rel="stylesheet" href="/js-project-group-11/assets/vendor-ed6a6904.css">
-  <link rel="stylesheet" href="/js-project-group-11/assets/index-d11e106d.css">
+  <link rel="stylesheet" href="/js-project-group-11/assets/index-cacd6d4b.css">
 </head>
 
 <body>
@@ -27,7 +27,7 @@
             <img class="header-logo-img" src="/js-project-group-11/assets/header-logo-230ae2b9.png" alt="Logo image" />
             <span class="header-logo-span">jefferson*</span>
         </a>
-        <button class="burger-menu-btn" aria-expanded="false" aria-controls="mobile-menu">
+        <button class="burger-menu-btn" aria-expanded="false" aria-controls="header-overlay">
             <svg class="header-burger-menu-icon" width="28" height="28">
                 <use href="/js-project-group-11/assets/icons-9a23d292.svg#icon-burger"></use>
             </svg>
@@ -38,7 +38,7 @@
         </div>
     </div>
 
-    <div class="header-overlay">
+    <div id="header-overlay">
         <div class="header-overlay-modal">
             <button class="header-mobile-menu-close-btn">
                 <svg class="header-close-icon-svg" width="28" height="28">
@@ -60,9 +60,9 @@
                         <a href="#faq" class="header-nav-list-item-link">FAQ</a>
                     </li>
                 </ul>
-                <button type="button" class="header-mobile-order-project-btn">
-                    <a href="#work-together">Order the project</a>
-                </button>
+                <a href="#work-together" class="header-mobile-order-project-btn">
+                    Order the project
+                </a>
             </div>
         </div>
     </div>
@@ -381,6 +381,7 @@
         </button>
       </div>
     </div>
+  </div>
 </section>
     <section class="faq section" id="faq">
   <div class="container">

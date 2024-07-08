@@ -35,7 +35,7 @@
 .projects-skills-item {
   color: var(--background);
   max-width: fit-content;
-  border: 1px solid #1C1D2033;
+  border: 1px solid #1c1d2033;
   border-radius: 60px;
   padding: 13px 18px;
   transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -56,8 +56,23 @@
   margin-bottom: 32px;
 }
 
+@media screen and (max-width: 374px) {
+  .projects-card-title {
+    letter-spacing: -0.045em;
+    font-size: 17.5px;
+    text-align: left;
+    max-width: 230px;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .projects-card-title {
+    letter-spacing: -0.03em;
+  }
+}
+
 .projects-card-button {
-  background-color: var( --button-text);
+  background-color: var(--button-text);
   width: 141px;
   height: 45px;
   display: flex;
@@ -65,7 +80,8 @@
   justify-content: center;
   border-radius: 60px;
   cursor: pointer;
-  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out,
+    box-shadow 0.3s ease-in-out;
 }
 
 .projects-card-link {
@@ -76,7 +92,7 @@
 }
 
 .projects-card-button:hover {
-  background-color: #E0373F;
+  background-color: #e0373f;
   transform: scale(1.05);
   box-shadow: 0 0 0 1px var(--arrow);
 }
@@ -196,7 +212,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-    .projects-section {
+  .projects-section {
     margin-bottom: 164px;
   }
 
@@ -211,7 +227,7 @@
     flex-direction: row;
   }
 
-    .projects-skills-list {
+  .projects-skills-list {
     margin-bottom: 223px;
   }
 

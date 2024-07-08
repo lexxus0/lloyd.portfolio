@@ -166,6 +166,10 @@
   bottom: 32px;
 }
 
+.header-mobile-order-project-btn:hover {
+  background: #e0373f;
+}
+
 /* media queries  */
 
 @media (min-width: 768px) {
@@ -242,6 +246,10 @@
     font-size: 14px;
     letter-spacing: -0.02em;
     color: var(--main-text);
+  }
+
+  .header-order-project-btn:hover {
+    background: #e0373f;
   }
 }
 

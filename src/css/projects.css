@@ -1,0 +1,225 @@
+.projects-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  opacity: 0.4;
+  margin-bottom: 32px;
+}
+
+.swiper .projects-cards {
+  display: flex;
+  margin-bottom: 32px;
+}
+
+.swiper .projects-list-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-card-top {
+  background-color: var(--main-text);
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
+  padding: 32px;
+}
+
+.projects-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 96px;
+}
+
+.projects-skills-item {
+  color: var(--background);
+  max-width: fit-content;
+  border: 1px solid #1C1D2033;
+  border-radius: 60px;
+  padding: 13px 18px;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.projects-skills-item:hover {
+  background-color: var(--button-text);
+  box-shadow: 0 0 0 1px var(--arrow);
+}
+
+.projects-card-title {
+  width: 279px;
+  color: var(--background);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.166;
+  letter-spacing: -0.03em;
+  margin-bottom: 32px;
+}
+
+.projects-card-button {
+  background-color: var( --button-text);
+  width: 141px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.projects-card-link {
+  font-size: 16px;
+  line-height: 1.21;
+  letter-spacing: -0.02em;
+  padding: 13px 32px;
+}
+
+.projects-card-button:hover {
+  background-color: #E0373F;
+  transform: scale(1.05);
+  box-shadow: 0 0 0 1px var(--arrow);
+}
+
+.projects-card-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cards);
+  padding: 100px 16px;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.projects-img {
+  transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.projects-img:hover {
+  box-shadow: 0 0 8px var(--main-text);
+  transform: scale(1.03);
+}
+
+.projects-swiper-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 1px;
+}
+
+.projects-btn-prev,
+.projects-btn-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 60px;
+  border: 1px solid #fafafa80;
+  cursor: pointer;
+  background-color: transparent;
+  transition: background-color 0.3s ease-in-out;
+  outline: none;
+}
+
+.projects-btn-prev:hover,
+.projects-btn-next:hover {
+  background-color: var(--cards);
+}
+
+.projects-btn-prev:focus,
+.projects-btn-next:focus {
+  background-color: var(--cards);
+  box-shadow: 0 0 0 1px var(--main-text);
+}
+
+.projects-icon {
+  width: 24px;
+  height: 24px;
+  stroke: var(--main-text);
+  fill: none;
+}
+
+.projects-btn-prev:disabled,
+.projects-btn-next:disabled {
+  opacity: 0.3;
+}
+
+@media screen and (min-width: 768px) {
+  .projects-section {
+    margin-bottom: 96px;
+  }
+
+  .swiper .projects-cards {
+    margin-bottom: 64px;
+  }
+
+  .projects-card-top {
+    padding: 64px;
+  }
+
+  .projects-skills-list {
+    margin-bottom: 164px;
+  }
+
+  .projects-card-title {
+    width: 494px;
+    font-size: 44px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+  }
+
+  .projects-card-button {
+    width: 177px;
+    height: 55px;
+  }
+
+  .projects-card-link {
+    padding: 18px 50px;
+  }
+
+  .projects-card-bottom {
+    padding: 120px 45px;
+  }
+
+  .projects-btn-prev,
+  .projects-btn-next {
+    width: 68px;
+    height: 68px;
+  }
+
+  .projects-icon {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+    .projects-section {
+    margin-bottom: 164px;
+  }
+
+  .projects-card-top {
+    width: 50%;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 24px;
+  }
+
+  .swiper .projects-list-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+    .projects-skills-list {
+    margin-bottom: 223px;
+  }
+
+  .projects-card-bottom {
+    width: 50%;
+    padding-left: 37px;
+    padding-right: 37px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 24px;
+  }
+}

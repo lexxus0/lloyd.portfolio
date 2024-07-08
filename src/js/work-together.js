@@ -9,7 +9,7 @@ const refs = {
   successMessage: document.getElementById('successMessage'),
   errorMessage: document.getElementById('errorMessage'),
   formElem: document.querySelector('.footer-form'),
-  footerElem: document.getElementById('footer'),
+  footerElem: document.getElementById('work-together'),
 };
 
 const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;

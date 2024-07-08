@@ -143,6 +143,7 @@
 .footer-contacts {
   display: flex;
   margin-top: 64px;
+  gap: 4px;
   list-style: none;
   font-style: normal;
 }
@@ -153,6 +154,7 @@
   margin-bottom: 8px;
   text-align: center;
   text-decoration: none;
+  white-space: nowrap;
   font-size: 14px;
   letter-spacing: -0.02em;
   transition: border 500ms ease, text-shadow 500ms ease, transform 500ms ease;
@@ -345,6 +347,7 @@
 
   .footer-contacts {
     margin-top: 18px;
+    gap: 8px;
   }
   .info-link {
     padding: 18px 32px;

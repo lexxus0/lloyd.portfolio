@@ -56,6 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+
 function openModal({ title, message }) {
   closeModal();
   const markup = `<div class="backdrop is-open"><div class="modal is-visible"><button class="modal-close-btn" type="button"><svg
@@ -68,6 +69,7 @@ function openModal({ title, message }) {
   addModalEventListeners();
   refs.formElem.reset();
 }
+
 function addModalEventListeners() {
   const backdropElem = document.querySelector('.backdrop');
   const modalCloseBtn = document.querySelector('.modal-close-btn');

@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 (() => {
-  const mobMenu = document.querySelector('.header-overlay');
+  const mobMenu = document.querySelector('#header-overlay');
   const openMobMenuButton = document.querySelector('.burger-menu-btn');
   const closeMobMenuButton = document.querySelector(
     '.header-mobile-menu-close-btn'

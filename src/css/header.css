@@ -58,7 +58,7 @@
 
 /* mobile menu styles */
 
-.header-overlay {
+#header-overlay {
   position: fixed;
   top: 0;
   left: 0;
@@ -73,7 +73,7 @@
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header-overlay.is-open {
+#header-overlay.is-open {
   opacity: 1;
   transform: translateX(0);
   visibility: visible;
@@ -198,7 +198,7 @@
     color: var(--main-text);
   }
 
-  .header-overlay {
+  #header-over.lay {
     display: none;
   }
 

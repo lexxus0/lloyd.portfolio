@@ -1,12 +1,14 @@
 .container-hero {
   padding-top: 250px;
-/* .container-hero {
+}
+
+.container-hero {
   padding-top: 169px;
   padding-bottom: 32px;
   min-width: 375px;
   padding-left: 16px;
   padding-right: 16px;
-} */
+}
 
 .content-hero {
   padding-top: 281px;

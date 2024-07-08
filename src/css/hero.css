@@ -1,9 +1,7 @@
-.container-hero {
-    padding-top: 169px;
+.content-hero {
+    padding-top: 281px;
     padding-bottom: 32px;
-    min-width: 375px;
-    padding-left: 16px;
-    padding-right: 16px;
+    position: relative;
 }
 
 .hero,
@@ -42,6 +40,7 @@ header {
     letter-spacing: -0.02em;
     color: #fafafa;
     display: flex;
+    flex-wrap: wrap;
     gap: 4px;
 }
 

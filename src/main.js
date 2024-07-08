@@ -1,7 +1,5 @@
 import * as header from './js/header.js';
-import * as hero from './js/hero.js';
 import * as aboutMe from './js/about-me.js';
-import * as benefits from './js/benefits.js';
 import * as projects from './js/projects.js';
 import * as faq from './js/faq.js';
 import * as covers from './js/covers.js';

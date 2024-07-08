@@ -113,6 +113,17 @@
   .reviews-title {
     margin-top: 96px;
   }
+
+  .reviews-btn-prev,
+  .reviews-btn-next {
+    width: 68px;
+    height: 68px;
+  }
+
+  .reviews-icon {
+    width: 32px;
+    height: 32px;
+  }
 }
 @media screen and (min-width: 1440px) {
   .reviews-title {

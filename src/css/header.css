@@ -140,6 +140,10 @@
   color: var(--main-text);
 }
 
+.header-nav-list-item:hover {
+  color: var(--button-text);
+}
+
 @media screen and (max-width: 767px) {
   .header-nav-list-item {
     text-decoration: underline;

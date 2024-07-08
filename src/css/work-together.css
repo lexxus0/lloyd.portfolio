@@ -237,8 +237,7 @@
   background-color: transparent;
   line-height: 0;
   cursor: pointer;
-  stroke-width: 2px;
-  stroke: #fafafa;
+  color: #fafafa;
   cursor: pointer;
   border-radius: 50%;
   transition: transform 0.3s ease,

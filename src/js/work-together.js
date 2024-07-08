@@ -56,12 +56,26 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
+function loadSvgSprite() {
+  fetch('../img/icons.svg#icon-close-x')
+    .then(response => response.text())
+    .then(svg => {
+      const div = document.createElement('div');
+      div.style.display = 'none';
+      div.innerHTML = svg;
+      document.body.appendChild(div);
+    })
+    .catch(error => console.error('Error loading SVG:', error));
+}
+
+document.addEventListener('DOMContentLoaded', loadSvgSprite);
+
 function openModal({ title, message }) {
   closeModal();
   const markup = `<div class="backdrop is-open"><div class="modal is-visible"><button class="modal-close-btn" type="button"><svg
         class="modal-close-btn-icon"
         aria-label="close icon"
-        width="14" height="14"><use href="../img/icons.svg#icon-close-x"></use></svg></button>
+        width="14" height="14"><use href="#icon-close-x"></use></svg></button>
     <h2 class="modal-title">${title}</h2><p class="modal-description">${message}</p></div></div>`;
   refs.footerElem.insertAdjacentHTML('afterend', markup);
   document.body.classList.add('no-scroll');

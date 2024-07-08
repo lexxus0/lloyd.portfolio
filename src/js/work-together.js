@@ -68,7 +68,6 @@ function openModal({ title, message }) {
   addModalEventListeners();
   refs.formElem.reset();
 }
-
 function addModalEventListeners() {
   const backdropElem = document.querySelector('.backdrop');
   const modalCloseBtn = document.querySelector('.modal-close-btn');
@@ -87,7 +86,6 @@ function addModalEventListeners() {
     });
   }
 }
-
 function closeModal() {
   const backdropElem = document.querySelector('.backdrop.is-open');
   if (backdropElem) {

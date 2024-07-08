@@ -1,0 +1,141 @@
+/* .container {
+  margin: 0 auto;
+  padding left: 32px;
+  padding right: 32px;
+} */
+
+.faq-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.faq-list {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+.faq-item {
+  width: 100%;
+  /* border-bottom: 1px solid rgba(250, 250, 250, 0.2); */
+  border-top: 1px solid rgba(250, 250, 250, 0.2);
+  padding: 20px 0;
+}
+
+.faq-item:first-child {
+  border-top: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  cursor: pointer;
+}
+
+.faq-questions {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: inherit;
+  margin-bottom: 16px;
+  margin-right: 44px;
+}
+
+.btn-arrow {
+  display: flex;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 9px;
+  transition: transform 0.5s ease;
+  border-radius: 50%;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  background-color: transparent;
+}
+
+.is-active .btn-arrow {
+  transform: rotate(180deg);
+}
+
+.btn-arrow:hover {
+  border: 1px solid #fafafa;
+}
+
+.arrow-icon {
+  min-width: 18px;
+  height: 18px;
+  stroke: #fafafa;
+  fill: #fafafa;
+}
+
+.faq-text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.faq-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-text {
+  max-height: 1000px; 
+}
+
+/* ---------- Tablet ---------- */
+
+@media screen and (min-width: 768px) {
+  .faq-item {
+    padding-top: 32px;
+    padding-bottom: 24px;
+  }
+
+  .faq-text-wrap{
+    padding-right: 48px;
+  }
+}
+
+
+  
+/* ---------- Desktop ---------- */
+
+@media screen and (min-width: 1440px) {
+  .faq-questions {
+    margin-bottom: 26px;
+    margin-right: 42px;
+  }
+
+  .faq-list {
+    display: flex;
+    flex-wrap:wrap;
+  }
+
+  .faq-item {
+    width: calc((100% - 30px) / 2);
+    /* padding: 20px 0; */
+    padding-bottom: 26px;
+  }
+
+.faq-item:nth-child(even) {
+  border-left: 1px solid rgba(250, 250, 250, 0.2);
+  padding-left: 30px;
+}
+
+.faq-item:nth-child(odd) {
+  padding-right: 30px;
+}
+.faq-text-wrap{
+  padding-right: 32px;
+}
+
+}

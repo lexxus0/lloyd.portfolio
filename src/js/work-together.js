@@ -63,7 +63,7 @@ function loadSvgSprite() {
       const div = document.createElement('div');
       div.style.display = 'none';
       div.innerHTML = svg;
-      document.body.appendChild(div);
+      document.body.insertBefore(div, document.body.firstChild);
     })
     .catch(error => console.error('Error loading SVG:', error));
 }
